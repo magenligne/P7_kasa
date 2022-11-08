@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../assets/Montserrat-Medium.ttf);
+}
+
+.acceuil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "montserrat";
+}
+.espaceCartes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  @media screen and (min-width: 767px) {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
