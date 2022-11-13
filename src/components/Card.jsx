@@ -1,9 +1,19 @@
 import React from "react";
-function Card() {
+import { NavLink } from "react-router-dom";
+function Card(props) {
+  // const detailsLogement = this.props.detailsLogement;
+  console.log(props.idLogement);
+
   return (
-  <div className="carteLogement">
-    <p className="titreLocation"></p>
-    </div>
+    <NavLink className="carteLogement">
+      <p className="carteLogement_titre">{props.titreLogement}</p>
+
+      <img
+        src={props.coverLogement}
+        alt="cover"
+        className="carteLogement_image"
+      />
+    </NavLink>
   );
 }
 
