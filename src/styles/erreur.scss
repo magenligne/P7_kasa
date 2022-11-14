@@ -1,0 +1,31 @@
+.erreur {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+  font-family: "montserrat";
+}
+h1 {
+  font-size: 96px;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  margin: 0;
+  //   font-family: "Montserrat Bold 700";
+}
+.lien {
+  color: #ff6060;
+  margin: 50px;
+}
+p {
+  font-size: 18px;
+  text-align: center;
+  margin: 0px;
+}
+.texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

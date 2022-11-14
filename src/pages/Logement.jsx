@@ -15,7 +15,23 @@ import "../styles/footer.scss";
 // import DivDeroulante from "../components/DivDeroulante";
 
 export default function Logement() {
-  const ceLogement = data.find((card) => card.id === "46d188c5");
+  //********************* */ Traitement de l'url pour récupérer l'id du logement cliqué en page d'acceuil
+  //---------------------------------------------------RECUPERATION DE L'ID DANS L'URL-------------------------------------------------------------------
+  // window.addEventListener("load", () => {
+  //   // alert("Page chargée"); //test chargement ok
+  //   console.log(window.location); //test:affiche l'url de la page
+
+  //   //Nous allons créer un object de type URLSearchParams qui permet de récupérer des paramètres d'URL et lui passer en argument la chaine à droite du ?:
+  //   let searchId = new URLSearchParams(window.location.search); //URL.search correspond à la chaine de caractère de l'url à droite du ?
+
+  //   if (searchId.has("id")) {
+  //     let idLogement = searchId.get("id");
+  //     //La méthode get("txt") appliquée à un objet de type URLSearchParam renvoie la valeur à droite du = dans une chaine de type txt=valeur.
+  //     console.log(idLogement); //ok
+
+  //**************************************************************************************** */
+
+  const ceLogement = data.find((card) => card.id === "d60ca600");
   console.log(ceLogement);
   return (
     <div className="logement">
@@ -65,3 +81,5 @@ export default function Logement() {
     </div>
   );
 }
+//   });
+// }
