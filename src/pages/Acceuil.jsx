@@ -20,7 +20,6 @@ import React from "react";
 // const Acceuil = () => {
 class Acceuil extends React.Component {
   state = { data };
-
   render() {
     return (
       <div className="acceuil">
@@ -33,6 +32,7 @@ class Acceuil extends React.Component {
           <img src={COTE} alt="cote" className="cote_image" />
           <p className="cote_texte"> Chez vous, partout et ailleurs</p>
         </div>
+
         <div className="espaceCartes">
           {/* creation des cards à partir du json */}
           {data.map((eachcard) => (
