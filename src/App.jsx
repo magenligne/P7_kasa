@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/Apropos" element={<Apropos />} />
         <Route
           // path="/Logement/id=:idLogement"
-          path="/Logement"
+          path="/Logement/:id"
           element={<Logement />}
         />
         <Route path="*" element={<Erreur />} />

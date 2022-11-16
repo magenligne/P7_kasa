@@ -8,7 +8,7 @@ function Card(props) {
     <div>
       {/* ligne de dessous fonctione mais en attente de correction du path dans App.js: */}
       {/* <Link className="carteLogement" to={`/Logement/id=${props.idLogement}`}> */}
-      <Link className="carteLogement" to="/Logement">
+      <Link className="carteLogement" to={`/Logement/${props.idLogement}`}>
         <p className="carteLogement_titre">{props.titreLogement}</p>
 
         <img

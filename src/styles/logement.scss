@@ -156,12 +156,25 @@
   color: #deebff;
   font-size: 11px;
 }
-
+.DeroulanteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: 700px;
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+  }
+}
 .divDeroulante {
   display: flex;
   flex-direction: column;
-  width: 95%;
-  margin: 5px;
+  width: 100%;
+  margin: 15px 5px 5px 5px;
   &_bandeau {
     display: flex;
     justify-content: space-between;
@@ -184,7 +197,21 @@
     }
   }
   &_masquable {
-    // display: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-align: justify;
+    padding: 30px 10px 20px 10px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    margin-top: -10px;
+    z-index: -1;
+    @media screen and (min-width: 767px) {
+      height: 200px;
+    }
+  }
+  &_masquable p {
+    display: flex;
     font-size: 12px;
     text-align: justify;
   }
