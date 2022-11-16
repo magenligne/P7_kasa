@@ -24,7 +24,7 @@ export default function Logement() {
   const idLogement = useParams().id;
 
   const ceLogement = data.find((card) => card.id === idLogement);
-  console.log(ceLogement);
+  console.log(showDivMasquable);
 
   return (
     <div className="logement">
@@ -53,8 +53,11 @@ export default function Logement() {
 
             <div
               className="divDeroulante_bandeau_down"
-              onClick={setShowDivMasquable(!showDivMasquable)}
+              onClick={() =>
+                setShowDivMasquable((showDivMasquable) => !showDivMasquable)
+              }
             >
+              {/* {setShowDivMasquable(!showDivMasquable)} */}
               {showDivMasquable ? (
                 <i class="fa-solid fa-chevron-up"></i>
               ) : (
@@ -77,7 +80,8 @@ export default function Logement() {
 
             <div
               className="divDeroulante_bandeau_down"
-              onClick={setShowDivEquip(!showDivEquip)}
+              onClick={() => setShowDivEquip((showDivEquip) => !showDivEquip)}
+              // {setShowDivEquip(!showDivEquip)}
             >
               {showDivEquip ? (
                 <i class="fa-solid fa-chevron-up"></i>
