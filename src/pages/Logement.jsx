@@ -15,7 +15,6 @@ import "../styles/ligneDuHaut.scss";
 
 import "../styles/footer.scss";
 import { useParams } from "react-router-dom";
-// import DivDeroulante from "../components/DivDeroulante";
 
 export default function Logement() {
   const [showDivMasquable, setShowDivMasquable] = useState(false);
@@ -24,7 +23,6 @@ export default function Logement() {
   const idLogement = useParams().id;
 
   const ceLogement = data.find((card) => card.id === idLogement);
-  // console.log(showDivMasquable);
 
   return (
     <div className="logement">
@@ -41,7 +39,6 @@ export default function Logement() {
             <p className="titres_grosTitre">{ceLogement.title}</p>
             <p className="titres_petitTitre">{ceLogement.location}</p>
           </div>
-          {/* <div className="tags">Tags</div> */}
           <Tags tags={ceLogement.tags} />
         </div>
         <RateAndProprio etoiles={ceLogement.rating} hote={ceLogement.host} />
@@ -69,9 +66,6 @@ export default function Logement() {
             etat={showDivMasquable}
             description={ceLogement.description}
           />
-          {/* <div className="divDeroulante_masquable">
-            {ceLogement.description}
-          </div> */}
         </div>
 
         <div className="divDeroulante">
@@ -81,7 +75,6 @@ export default function Logement() {
             <div
               className="divDeroulante_bandeau_down"
               onClick={() => setShowDivEquip((showDivEquip) => !showDivEquip)}
-              // {setShowDivEquip(!showDivEquip)}
             >
               {showDivEquip ? (
                 <i class="fa-solid fa-chevron-up"></i>
@@ -90,7 +83,6 @@ export default function Logement() {
               )}
             </div>
           </div>
-          {/* <div className="divDeroulante_masquable">{ceLogement.equipments}</div> */}
           <DivMasquableEquip
             etatEquip={showDivEquip}
             equipements={ceLogement.equipments}
