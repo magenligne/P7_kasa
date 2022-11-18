@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import LOGO from "../assets/LOGO.png";
 import Nav from "../components/Nav";
 import AproposMobile from "../assets/AproposMobile.png";
-// import AproposDesktop from "../assets/AproposDesktop.png";
+import AproposDesktop from "../assets/AproposDesktop.png";
 
 import { useState } from "react";
 
@@ -35,6 +35,12 @@ const Apropos = () => {
           alt="cote"
           className="imageApropos_imgMobile"
         />
+                <img
+          src={AproposDesktop}
+          alt="cote"
+          className="imageApropos_imgDesktop"
+        />
+
       </div>
 
       <div className="ContainerDivApropos">
