@@ -5,9 +5,11 @@ function Tags(props) {
   const tagsTab = props.tags;
   return (
     <div className="tagsContainer">
-      {tagsTab.map((eachtag) => (
+      {tagsTab.map((eachtag, tag) => (
         <div className="tagsContainer_tag">
-          <p className="tagsContainer_tag_p">{eachtag}</p>
+          <p key={tag} className="tagsContainer_tag_p">
+            {eachtag}
+          </p>
         </div>
       ))}
     </div>

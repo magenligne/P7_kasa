@@ -24,7 +24,7 @@ export default function Logement() {
   const idLogement = useParams().id;
 
   const ceLogement = data.find((card) => card.id === idLogement);
-  console.log(showDivMasquable);
+  // console.log(showDivMasquable);
 
   return (
     <div className="logement">
