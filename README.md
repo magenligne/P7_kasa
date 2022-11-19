@@ -1,3 +1,4 @@
+# le code React Router pour les routes de l'application est dans le fichier App.jsx
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

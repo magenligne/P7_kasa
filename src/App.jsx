@@ -1,10 +1,8 @@
 import "./App.css";
-// import Footer from "./components/Footer";
 import Acceuil from "./pages/Acceuil";
 import Apropos from "./pages/Apropos";
 import Logement from "./pages/Logement";
 import Erreur from "./pages/Erreur";
-// import Card from "./components/Card";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,7 +15,6 @@ const App = () => {
         <Route path="/" element={<Acceuil />} />
         <Route path="/Apropos" element={<Apropos />} />
         <Route
-          // path="/Logement/id=:idLogement"
           path="/Logement/:id"
           element={<Logement />}
         />

@@ -10,6 +10,9 @@ import DivMasquable from "../components/DivMasquable";
 import DivMasquableEquip from "../components/DivMasquableEquip";
 
 import "../styles/logement.scss";
+import "../styles/RateAndProprio.scss";
+import "../styles/tags.scss";
+import "../styles/divDeroulante.scss";
 
 import "../styles/ligneDuHaut.scss";
 

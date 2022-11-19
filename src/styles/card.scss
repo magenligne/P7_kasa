@@ -27,10 +27,11 @@
     align-items: center;
     color: white;
     position: absolute;
-    width: 330px;
+    width: 300px;
     text-align: left;
     font-size: 15px;
     margin: 10px;
     text-shadow: 0.1em 0.1em 0.2em black;
+    flex-wrap: wrap;
   }
 }
