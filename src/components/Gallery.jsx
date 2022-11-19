@@ -16,36 +16,40 @@ function Gallery(props) {
       className="gallery_image"
     />
   ));
-  console.log(props.images);
-  console.log("Keyobjet1:", tabImages[1].key);
+  console.log("tabImages:", tabImages);
+  // console.log("Keyobjet1:", tabImages[1].key);
+  console.log("Keyobjet0:", tabImages[0].key);
 
   return (
     <div className="gallery">
-      <div className="btnContainer">
-        <div
-          className="btnContainer_btnPrev"
-          onClick={() => {
-            if (currentIndex === 0) {
-              return setCurrentIndex(tabImages.length - 1);
-            }
-            return setCurrentIndex(currentIndex - 1);
-          }}
-        >
-          <i class="fa-solid fa-chevron-left"></i>
+      {tabImages.length > 1 ? (
+        <div className="btnContainer">
+          <div
+            className="btnContainer_btnPrev"
+            onClick={() => {
+              if (currentIndex === 0) {
+                return setCurrentIndex(tabImages.length - 1);
+              }
+              return setCurrentIndex(currentIndex - 1);
+            }}
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div
+            className="btnContainer_btnNext"
+            onClick={() => {
+              if (currentIndex === tabImages.length - 1) {
+                return setCurrentIndex(0);
+              }
+              return setCurrentIndex(currentIndex + 1);
+            }}
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
         </div>
-        <div
-          className="btnContainer_btnNext"
-          onClick={() => {
-            if (currentIndex === tabImages.length - 1) {
-              return setCurrentIndex(0);
-            }
-            return setCurrentIndex(currentIndex + 1);
-          }}
-        >
-          <i class="fa-solid fa-chevron-right"></i>
-        </div>
-      </div>
-
+      ) : (
+        <div className="btnContainer"></div>
+      )}
       <img
         src={props.images[currentIndex]}
         alt="cover"

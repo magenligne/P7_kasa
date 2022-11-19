@@ -15,7 +15,8 @@ import "../styles/footer.scss";
 import React from "react";
 
 // console.log(data);
-// const listCards = data.map((eachcard) => <Card />);
+// const IDtCards = data.map((eachcard) => eachcard.id);
+// console.log("liste id:", IDtCards);
 
 // const Acceuil = () => {
 class Acceuil extends React.Component {
@@ -40,11 +41,6 @@ class Acceuil extends React.Component {
               idLogement={eachcard.id}
               titreLogement={eachcard.title}
               coverLogement={eachcard.cover}
-              // onClick={
-              //   console.log("hello")
-              // coucou
-              // window.location.assign("http://localhost:3000/Logement")
-              // }
             />
           ))}
         </div>
