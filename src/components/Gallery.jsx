@@ -1,12 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import "../styles/gallerie.scss";
-
-// import data from "../data.json";
-
 function Gallery(props) {
-  // const lengthTabImages = props.images.length;
-  const [currentIndex, setCurrentIndex] = useState(0); // console.log("props.images:", props.images);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const tabImages = props.images.map((eachimg, keyImg) => (
     <img
@@ -16,10 +12,6 @@ function Gallery(props) {
       className="gallery_image"
     />
   ));
-  console.log("tabImages:", tabImages);
-  // console.log("Keyobjet1:", tabImages[1].key);
-  console.log("Keyobjet0:", tabImages[0].key);
-
   return (
     <div className="gallery">
       {tabImages.length > 1 ? (
@@ -55,9 +47,13 @@ function Gallery(props) {
         alt="cover"
         className="gallery_image"
       />
-      <div className="affichIndex">
-        {currentIndex + 1}/{tabImages.length}
-      </div>
+      {tabImages.length > 1 ? (
+        <div className="affichIndex">
+          {currentIndex + 1}/{tabImages.length}
+        </div>
+      ) : (
+        <div className="affichIndex"> </div>
+      )}
     </div>
   );
 }

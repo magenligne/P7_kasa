@@ -57,7 +57,6 @@ export default function Logement() {
                 setShowDivMasquable((showDivMasquable) => !showDivMasquable)
               }
             >
-              {/* {setShowDivMasquable(!showDivMasquable)} */}
               {showDivMasquable ? (
                 <i class="fa-solid fa-chevron-up"></i>
               ) : (

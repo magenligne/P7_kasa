@@ -1,4 +1,3 @@
-// import React from 'react'
 import data from "../data.json";
 import Nav from "../components/Nav";
 import Card from "../components/Card";
@@ -20,7 +19,7 @@ import React from "react";
 
 // const Acceuil = () => {
 class Acceuil extends React.Component {
-  state = { data };
+  // state = { data };
   render() {
     return (
       <div className="acceuil">
