@@ -8,5 +8,7 @@ body {
   position: relative;
   padding-bottom: 250px;
   min-height: 100vh;
-  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
 }
