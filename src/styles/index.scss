@@ -5,14 +5,15 @@
 
 body {
   color: #ff6060;
-  max-width: 1440px;
   min-width: 375px;
   margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, "montserrat" "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: "montserrat";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-bottom: 250px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 code {
