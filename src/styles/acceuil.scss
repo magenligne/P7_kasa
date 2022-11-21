@@ -21,10 +21,14 @@
   margin-top: 20px;
 
   @media screen and (min-width: 767px) {
-    width: 100%;
+    width: 97%;
     column-gap: 60px;
     row-gap: 50px;
     flex-direction: row;
     flex-wrap: wrap;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 }
