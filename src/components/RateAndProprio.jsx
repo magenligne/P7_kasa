@@ -13,7 +13,7 @@ function RateAndProprio(props) {
   const etoiles = [];
   for (let i = 0; i < props.etoiles; i++) {
     etoiles.push(
-      <div className="etoileOrange">
+      <div className="etoileOrange" key={`etoileOrange_${i}`}>
         {/* <i className="etoileOrange fa-solid fa-star"></i> */}
         <img src={Star} alt="etoileOrange" className="etoile" />
       </div>
@@ -21,7 +21,7 @@ function RateAndProprio(props) {
   }
   for (let i = 0; i < etoilesGrises; i++) {
     etoiles.push(
-      <div className="etoileGrise">
+      <div className="etoileGrise" key={`etoileGrise_${i}`}>
         {/* <i className="etoileGrise fa-solid fa-star"></i> */}
         <img src={StarGrise} alt="etoileGrise" className="etoile" />
       </div>

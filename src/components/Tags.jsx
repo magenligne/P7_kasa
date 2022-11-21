@@ -6,10 +6,8 @@ function Tags(props) {
   return (
     <div className="tagsContainer">
       {tagsTab.map((eachtag, tag) => (
-        <div className="tagsContainer_tag">
-          <p key={tag} className="tagsContainer_tag_p">
-            {eachtag}
-          </p>
+        <div className="tagsContainer_tag" key={tag}>
+          <p className="tagsContainer_tag_p">{eachtag}</p>
         </div>
       ))}
     </div>

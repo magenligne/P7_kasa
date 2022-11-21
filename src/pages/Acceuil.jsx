@@ -24,6 +24,7 @@ class Acceuil extends React.Component {
               idLogement={eachcard.id}
               titreLogement={eachcard.title}
               coverLogement={eachcard.cover}
+              key={eachcard.id} // L'attribut "key" est tres important lorsqu'on fait des boucles en react
             />
           ))}
         </div>

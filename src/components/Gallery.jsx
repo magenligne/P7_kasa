@@ -17,7 +17,7 @@ function Gallery(props) {
               return setCurrentIndex(currentIndex - 1);
             }}
           >
-            <i class="fa-solid fa-chevron-left"></i>
+            <i className="fa-solid fa-chevron-left"></i>
           </div>
           <div
             className="btnContainer_btnNext"
@@ -28,7 +28,7 @@ function Gallery(props) {
               return setCurrentIndex(currentIndex + 1);
             }}
           >
-            <i class="fa-solid fa-chevron-right"></i>
+            <i className="fa-solid fa-chevron-right"></i>
           </div>
         </div>
       ) : (

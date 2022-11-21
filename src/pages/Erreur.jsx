@@ -15,7 +15,7 @@ export default function Erreur() {
         </div>
       </div>
 
-      <NavLink className="lien" exact to="/">
+      <NavLink className="lien" to="/">
         Retourner sur la page d'acceuil
       </NavLink>
     </div>

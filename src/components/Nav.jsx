@@ -4,15 +4,22 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <div className="navigation">
-      <NavLink classname= "lien" 
-      style={({isActive})=>{return{textDecoration:isActive?"":"none"}}} 
-      exact to="/">
+      <NavLink
+        className="lien"
+        style={({ isActive }) => {
+          return { textDecoration: isActive ? "" : "none" };
+        }}
+        to="/"
+      >
         Acceuil
       </NavLink>
-      <NavLink classname= "lien" 
-            style={({isActive})=>{return{textDecoration:isActive?"":"none"}}} 
-
-      exact to="/Apropos">
+      <NavLink
+        className="lien"
+        style={({ isActive }) => {
+          return { textDecoration: isActive ? "" : "none" };
+        }}
+        to="/Apropos"
+      >
         A propos
       </NavLink>
     </div>
