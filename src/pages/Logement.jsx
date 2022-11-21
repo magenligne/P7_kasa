@@ -10,11 +10,14 @@ import "../styles/tags.scss";
 import "../styles/divDeroulante.scss";
 
 import { useParams } from "react-router-dom";
+import Erreur from "./Erreur";
 
 export default function Logement() {
   const idLogement = useParams().id;
-
-  const ceLogement = data.find((card) => card.id === idLogement);
+  let ceLogement = data.find((card) => card.id === idLogement);
+  if (!ceLogement) {
+    return <Erreur />;
+  }
   const listpEquip = ceLogement.equipments.map((equip) => <p>{equip}</p>);
 
   return (
