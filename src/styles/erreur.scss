@@ -37,16 +37,6 @@ h1 {
     margin-bottom: 159px;
   }
 }
-p {
-  font-size: 18px;
-  margin: 0px;
-  @media screen and (min-width: 860px) {
-    font-size: 36px;
-    margin-bottom: 182px;
-  }
-
-  text-align: center;
-}
 .texte {
   display: flex;
   flex-direction: column;
@@ -62,6 +52,15 @@ p {
       align-items: center;
       margin: 0;
       width: 100%;
+      margin-bottom: 182px;
     }
+  }
+  &_p p {
+    font-size: 18px;
+    margin: 0px;
+    @media screen and (min-width: 860px) {
+      font-size: 36px;
+    }
+    text-align: center;
   }
 }
