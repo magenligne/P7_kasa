@@ -1,6 +1,7 @@
 .gallery {
   margin-top: 27px;
   margin-bottom: 15px;
+  position: relative;
 
   @media screen and (min-width: 767px) {
     margin-top: 20px;
@@ -66,10 +67,12 @@
 
   &_btnPrev {
     padding-left: 25px;
+    cursor: pointer;
   }
 
   &_btnNext {
     padding-right: 25px;
+    cursor: pointer;
   }
 
   & i {
