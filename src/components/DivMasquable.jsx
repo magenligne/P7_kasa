@@ -20,9 +20,15 @@ function DivMasquable(props) {
           )}
         </div>
       </div>
-      {showDivMasquable ? (
-        <div className="divDeroulante_masquable">{props.render()}</div>
-      ) : null}
+      <div
+        className={`divDeroulante_masquable ${
+          showDivMasquable
+            ? "divDeroulante_masquable--visible"
+            : "divDeroulante_masquable--hidden"
+        }`}
+      >
+        {props.render()}
+      </div>
     </div>
   );
 }
