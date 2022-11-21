@@ -2,8 +2,6 @@ import React, { useState } from "react";
 
 function DivMasquable(props) {
   const [showDivMasquable, setShowDivMasquable] = useState(false);
-  //   console.log(props.description);
-
   return (
     <div className="divDeroulante">
       <div className="divDeroulante_bandeau">
