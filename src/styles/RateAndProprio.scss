@@ -6,6 +6,7 @@
   width: 95%;
   @media screen and (min-width: 767px) {
     flex-direction: row;
+    width: 97%;
   }
 
   &_TitresTags {
@@ -34,6 +35,10 @@
     justify-content: flex-end;
     align-items: center;
     width: 45%;
+    @media screen and (min-width: 767px) {
+      margin-top: 24px;
+    }
+
     &_name {
       display: flex;
       justify-content: center;
@@ -42,9 +47,13 @@
       width: 60%;
       font-size: 12px;
       margin-right: 10px;
+      @media screen and (min-width: 767px) {
+        font-size: 18px;
+      }
     }
     &_imgHote {
       width: 40%;
+      max-width: 64px;
     }
     &_imgHote img {
       border-radius: 50%;
@@ -61,6 +70,11 @@
   align-items: center;
   width: 150px;
   height: 20px;
+  @media screen and (min-width: 767px) {
+    height: 36px;
+    width: auto;
+    padding-top: 20px;
+  }
   margin: 0%;
   padding-left: 10px;
 }
@@ -70,16 +84,43 @@
 //   }
 
 .etoileOrange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 18px;
   height: 18px;
 
   color: #ff6060;
   font-size: 11px;
+  // & img {
+  //   width: 11px;
+  //   @media screen and (min-width: 767px) {
+  //     width: 24px;
+  //   }
+  // }
+  @media screen and (min-width: 767px) {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
 }
 .etoileGrise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 18px;
   height: 18px;
 
   color: #deebff;
   font-size: 11px;
+  @media screen and (min-width: 767px) {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+}
+.etoile {
+  width: 100%;
+  height: 100%;
 }

@@ -1,21 +1,11 @@
-.DeroulanteContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 95%;
-  // height: 700px;
-  @media screen and (min-width: 767px) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    height: 200px;
-  }
-}
 .divDeroulante {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 15px 5px 5px 5px;
+  // margin: 0px 5px 5px 5px;
+  @media screen and (min-width: 767px) {
+    // width: 47%;
+  }
   &_bandeau {
     display: flex;
     justify-content: space-between;
@@ -28,6 +18,9 @@
       font-size: 13px;
       color: white;
       margin-left: 10px;
+      @media screen and (min-width: 767px) {
+        font-size: 18px;
+      }
     }
     & i {
       color: white;
@@ -39,21 +32,38 @@
   }
   &_masquable {
     display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    text-align: justify;
-    padding: 30px 10px 20px 10px;
     background-color: #f6f6f6;
     border-radius: 10px;
     margin-top: -10px;
     z-index: -1;
+    margin-bottom: 20px;
     @media screen and (min-width: 767px) {
-      height: 150px;
+      margin-bottom: 31px;
+      // height: 300px;
     }
   }
-  &_masquable p {
-    display: flex;
+}
+
+.pLogement {
+  display: flex;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 33px 7px 2px 12px;
+  font-size: 12px;
+  & p {
     font-size: 12px;
-    text-align: justify;
+    @media screen and (min-width: 767px) {
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 767px) {
+    height: 156px;
+    // width: 100%;
+    font-size: 18px;
+    padding: 40px 12px 5px;
+    padding-left: 20px;
   }
 }

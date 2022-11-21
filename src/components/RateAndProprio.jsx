@@ -1,4 +1,7 @@
 import React from "react";
+import "../styles/RateAndProprio.scss";
+import Star from "../assets/Star.svg";
+import StarGrise from "../assets/StarGrise.svg";
 
 function RateAndProprio(props) {
   console.log(props.etoiles);
@@ -11,14 +14,16 @@ function RateAndProprio(props) {
   for (let i = 0; i < props.etoiles; i++) {
     etoiles.push(
       <div className="etoileOrange">
-        <i className="etoileOrange fa-solid fa-star"></i>
+        {/* <i className="etoileOrange fa-solid fa-star"></i> */}
+        <img src={Star} alt="etoileOrange" className="etoile" />
       </div>
     );
   }
   for (let i = 0; i < etoilesGrises; i++) {
     etoiles.push(
       <div className="etoileGrise">
-        <i className="etoileGrise fa-solid fa-star"></i>
+        {/* <i className="etoileGrise fa-solid fa-star"></i> */}
+        <img src={StarGrise} alt="etoileGrise" className="etoile" />
       </div>
     );
   }
