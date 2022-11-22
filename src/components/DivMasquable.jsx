@@ -14,9 +14,9 @@ function DivMasquable(props) {
           }
         >
           {showDivMasquable ? (
-            <i class="fa-solid fa-chevron-up"></i>
+            <i className="fa-solid fa-chevron-up"></i>
           ) : (
-            <i class="fa-solid fa-chevron-down"></i>
+            <i className="fa-solid fa-chevron-down"></i>
           )}
         </div>
       </div>

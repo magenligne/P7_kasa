@@ -18,7 +18,9 @@ export default function Logement() {
   if (!ceLogement) {
     return <Erreur />;
   }
-  const listpEquip = ceLogement.equipments.map((equip) => <p>{equip}</p>);
+  const listpEquip = ceLogement.equipments.map((equip, index) => (
+    <p key={index}>{equip}</p>
+  ));
 
   return (
     <div className="logement">
