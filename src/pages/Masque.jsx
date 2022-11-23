@@ -9,12 +9,16 @@ import LOGO from "../assets/LOGO.png";
 export default class Masque extends React.Component {
   render() {
     return (
-      <div className="masque">
-        <div className="ligneDuHaut">
-          <img src={LOGO} alt="Logo Kasa" className="ligneDuHaut_logo" />
-          <Nav />
+      <div>
+        <div className="masque">
+          <div className="ligneDuHaut">
+            <img src={LOGO} alt="Logo Kasa" className="ligneDuHaut_logo" />
+
+            <Nav />
+          </div>
+
+          <Outlet />
         </div>
-        <Outlet />
         <Footer />
       </div>
     );

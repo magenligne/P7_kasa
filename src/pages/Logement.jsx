@@ -38,12 +38,12 @@ export default function Logement() {
       <div className="DeroulanteContainer">
         <DivMasquable
           title="Description"
-          render={() => <p className="pLogement">{ceLogement.description}</p>}
+          render={() => <div>{ceLogement.description}</div>}
         />
 
         <DivMasquable
           title="Equipement"
-          render={() => <div className="pLogement">{listpEquip}</div>}
+          render={() => <div>{listpEquip}</div>}
         />
       </div>
     </div>
